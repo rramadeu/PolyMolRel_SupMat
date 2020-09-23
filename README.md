@@ -1,6 +1,6 @@
-# PolyMolRel_SupMat
+# Estimation of Molecular Pairwise Relatedness in Autopolyploid Crops
 
-Supplementary Material (scripts) for the manuscript:
+Supplementary Material (scripts) to reproduce all the analysis of the manuscript:
 
 **"Estimation of Molecular Pairwise Relatedness in Autopolyploid Crops"**
 
