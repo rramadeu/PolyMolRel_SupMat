@@ -8,7 +8,11 @@ by Rodrigo R Amadeu, Leticia de Castro Lara, Patricio R Munoz, Antonio Augusto F
 
 Journal/Issue/Year: TBA
 
-All the scripts were evaluated under Linux Ubuntu 20.04. The pipeline of analysis uses mainly R and bash scripts. For a comprehensive reproduction, I order the scripts by 1 to N, they should be run in order fashion. It follows a short description of the content and steps:
+## Before running:
+All the scripts were evaluated under Linux Ubuntu 20.04. Before run it, verify if `PedigreeSim` and `PolyRelatedness` software are fully working. For `PedigreeSim` you need to have Java Runtime Environment installed. `PedigreeSim` details at https://www.wur.nl/en/show/Software-PedigreeSim.htm. `PolyRelatedness` details at https://github.com/huangkang1987/polyrelatedness. In addition, you need to have `R` and `AGHmatrix` package installed. Details in https://cran.r-project.org/ and https://cran.r-project.org/package=AGHmatrix respectivally.
+
+## Overall pipeline of analysis
+It uses mainly R and bash scripts. `0_runAll.sh` is a wrap-up bash script to run all the steps. For a comprehensive reproduction, the scripts are in order from 1 to 7. It follows a short description of the content and steps.
 
 ## Folders:
 `PedigreeSimInput` folder with the necessary parameters for PedigreeSim software. The files starting with 0 are common for all the ploidies:
@@ -19,7 +23,8 @@ All the scripts were evaluated under Linux Ubuntu 20.04. The pipeline of analysi
 - `X.par`: parameters for the simulation
 - `X_natural.par`: parameters for the simulation considering natural pairing
 
-**PedigreeSim** folder with the PedigreeSim software V2.0
+`PedigreeSim` folder with the PedigreeSim software V2.0
+`PolyRelatedness_1.8` folder with the PolyRelatedness software V1.8
 
 ## Scripts:
 `.sh` are bash scripts and `.R` are R scripts
@@ -30,8 +35,3 @@ All the scripts were evaluated under Linux Ubuntu 20.04. The pipeline of analysi
 - `5_AGHmatrix.R`: computes the relationship matrix considering the biallelic methods (VR, PD, FA) for all the files from 2 using AGHmatrix V2.0
 - `6_ObservedRelatedness.R`: computes the observed relationship matrix on the original data following delta computation (Equation 2 from the paper)
 - `7_SummaryResults.R`: computes the metrics between observed and estimated relationships and save them in a table format.
-
-
-
-
-
