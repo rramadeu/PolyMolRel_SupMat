@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 1.6.0-b105 (Sun Microsystems Inc.)
+Extension-Name: JSci core
+Specification-Vendor: Mark Hale
+Specification-Version: 1.0
+Implementation-Vendor-Id: mark.hale@physics.org
+Implementation-Vendor: Mark Hale
+Implementation-Version: 1.0
+
