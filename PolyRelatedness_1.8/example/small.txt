@@ -1,0 +1,18 @@
+//configuration
+//#alleledigits(1~4)	#outputdigits(0~10)	#missingallele	#ambiguousallele	#nthreads(1~64)
+3	8	0	999	4
+//allele frequency		
+D6S493	5	D7S820	4
+216	0.28813559	204	0.16949153
+212	0.19491525	208	0.44915254
+200	0.16101695	200	0.24576271
+220	0.26271186	212	0.13559322
+224	0.09322035	
+//locus weight
+1	1		
+//genotype		
+Ind	Pop	D6S493	D7S820
+BBAF1	BB	212212212212	208212208212
+BBAF2	BB	212220212220	200200200200
+BBAF4	BB	212216212216	208208208208
+//end of file
