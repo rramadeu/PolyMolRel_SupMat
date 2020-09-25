@@ -4,7 +4,7 @@ Supplementary Material (scripts) to reproduce all the analysis of the manuscript
 
 **"Estimation of Molecular Pairwise Relatedness in Autopolyploid Crops"**
 
-by Rodrigo Amadeu, Leticia Lara, Patricio Munoz, Antonio Garcia
+by Rodrigo R Amadeu, Leticia de Castro Lara, Patricio R Munoz, Antonio Augusto Franco Garcia
 
 Journal/Issue/Year: TBA
 
