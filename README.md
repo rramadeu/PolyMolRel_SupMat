@@ -9,10 +9,14 @@ by Rodrigo R Amadeu, Leticia de Castro Lara, Patricio R Munoz, Antonio Augusto F
 Journal/Issue/Year: TBA
 
 ## Before running:
-All the scripts were evaluated under Linux Ubuntu 20.04. Before run it, verify if `PedigreeSim` and `PolyRelatedness` software are fully working. For `PedigreeSim` you need to have Java Runtime Environment installed. `PedigreeSim` details at https://www.wur.nl/en/show/Software-PedigreeSim.htm. `PolyRelatedness` details at https://github.com/huangkang1987/polyrelatedness. In addition, you need to have `R` and `AGHmatrix` package installed. Details in https://cran.r-project.org/ and https://cran.r-project.org/package=AGHmatrix respectivally. Any question, please open an `Issue` here in this page or send me an e-mail (rramadeu at ufl dot edu).
+All the scripts were evaluated under Linux Ubuntu 20.04. Before run it, verify if `PedigreeSim` and `PolyRelatedness` software are fully working. For `PedigreeSim` you need to have Java Runtime Environment installed. `PedigreeSim` details at https://www.wur.nl/en/show/Software-PedigreeSim.htm. `PolyRelatedness` details at https://github.com/huangkang1987/polyrelatedness. In addition, you need to have `R` and `AGHmatrix` package installed. Details in https://cran.r-project.org/ and https://cran.r-project.org/package=AGHmatrix respectivally. 
+
+This is a comprehensive set of scripts designed to be able to run in a personal computer. In practice for a higher number of replicates you would need to split the `for loops` into parallel computation. The details on this task depends upon your computational cluster specifications. 
+
+Any question, please open an `Issue` here in this page or send me an e-mail (rramadeu at ufl dot edu). 
 
 ## Overall pipeline of analysis
-It uses mainly R and bash scripts. `0_runAll.sh` is a wrap-up bash script to run all the steps. For a comprehensive reproduction, the scripts are in order from 1 to 7. It follows a short description of the content and steps.
+It uses mainly R and bash scripts. `0_runAll.sh` is a wrap-up bash script to run all the steps. For a comprehensive reproduction, the scripts are in order from 1 to 7. It just loops for for **three** replicates. You can extend the loops throughout the script for your aimed number. For three replicates it takes approximately XX hours to run. It follows a short description of the content and steps.
 
 ## Folders:
 `PedigreeSimInput` folder with the necessary parameters for PedigreeSim software. The files starting with 0 are common for all the ploidies:
