@@ -8,6 +8,7 @@
 ## This script:
 ## Loops the PedigreeSim software through all the parameters files N times (here, N=3)
 
+mkdir output
 cd PedigreeSimInput
 time for i in {1..3} #increase 3 to number of reps you want to analyse
 do
