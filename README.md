@@ -29,7 +29,7 @@ All the scripts were evaluated under Linux Ubuntu 20.04. The pipeline of analysi
 - `4_PolyRelatednes.sh`: computes the relationship matrix considering the multiallelic methods (LO, RI, WE, MM, ML)  for all the files from 3 using PolyRelatedness V1.8
 - `5_AGHmatrix.R`: computes the relationship matrix considering the biallelic methods (VR, PD, FA) for all the files from 2 using AGHmatrix V2.0
 - `6_ObservedRelatedness.R`: computes the observed relationship matrix on the original data following delta computation (Equation 2 from the paper)
-- `7_MergingResults.R`: merges all the results and save them in lists of arrays in R format. The list has information of ploidy and method. The array has 3 dimensions with the relationship matrix and rep number (individual x individual x rep)
+- `7_SummaryResults.R`: computes the metrics between observed and estimated relationships and save them in a table format.
 
 
 
