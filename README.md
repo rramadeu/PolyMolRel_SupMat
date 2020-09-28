@@ -16,7 +16,7 @@ This is a comprehensive set of scripts designed to be able to run in a personal 
 Any question, please open an `Issue` here in this page or send me an e-mail (rramadeu at ufl dot edu). 
 
 ## Overall pipeline of analysis
-It uses mainly R and bash scripts. `0_runAll.sh` is a wrap-up bash script to run all the steps. For a comprehensive reproduction, the scripts are in order from 1 to 7. It just loops for for **three** replicates. You can extend the loops throughout the script for your aimed number. The whole pipeline considering three replicates takes approximately XX hours to run using a Intel® Core™ i7-8650U CPU @ 1.90GHz × 8 with 16 GB RAM. It follows a short description of the content and steps.
+It uses mainly R and bash scripts. `0_runAll.sh` is a wrap-up bash script to run all the steps. For a comprehensive reproduction, the scripts are in order from 1 to 7. It just loops for for **three** replicates (the original work has 100 replicates). You can extend the loops throughout the script for your aimed number. The whole pipeline considering three replicates took approximately 25 hours to run using a Intel® Core™ i7-8650U CPU @ 1.90GHz × 8 with 16 GB RAM. It follows a short description of the content and steps.
 
 ## Folders:
 `PedigreeSimInput` folder with the necessary parameters for PedigreeSim software. The files starting with 0 are common for all the ploidies:
@@ -35,7 +35,7 @@ It uses mainly R and bash scripts. `0_runAll.sh` is a wrap-up bash script to run
 - `1_SimulateGenotypes.sh`: loops the PedigreeSim software through all the parameters files N times (here, N=3)
 - `2_funderalleles2biallelic.R`: reads PedigreeSim output and sample biallelic markers (0 or 1) to all the loci. It saves the data as a matrix in Rdata format.
 - `3_funderalleles2multiallelic.R`: reads PedigreeSim output and sample biallelic and multiallelic markers to all loci. It saves the data as a .txt following PolyRelatedness V1.8 format
-- `4_PolyRelatednes.sh`: computes the relationship matrix considering the multiallelic methods (LO, RI, WE, MM, ML)  for all the files from 3 using PolyRelatedness V1.8
-- `5_AGHmatrix.R`: computes the relationship matrix considering the biallelic methods (VR, PD, FA) for all the files from 2 using AGHmatrix V2.0
-- `6_ObservedRelatedness.R`: computes the observed relationship matrix on the original data following delta computation (Equation 2 from the paper)
-- `7_SummaryResults.R`: computes the metrics between observed and estimated relationships and save them in a table format.
+- `4_ObservedRelatedness.R`: computes the observed relationship matrix on the original data following delta computation (Equation 2 from the paper)
+- `5_PolyRelatednes.sh`: computes the relationship matrix considering the multiallelic methods (LO, RI, WE, MM, ML)  for all the files from 3 using PolyRelatedness V1.8
+- `6_AGHmatrix.R`: computes the relationship matrix considering the biallelic methods (VR, PD, FA) for all the files from 2 using AGHmatrix V2.0
+- `7_ProcessingResults.R`: computes the metrics between observed and estimated relationships and save them in a table format.
