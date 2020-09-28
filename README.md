@@ -18,7 +18,7 @@ Any question, please open an `Issue` here in this page or send me an e-mail (rra
 ## Overall pipeline of analysis
 It uses mainly R and bash scripts. `0_runAll.sh` is a wrap-up bash script to run all the steps. For a comprehensive reproduction, the scripts are in order from 1 to 7. It just loops for for **three** replicates (the original work has 100 replicates). You can extend the loops throughout the script for your aimed number. The whole pipeline considering three replicates took approximately 25 hours to run using a Intel® Core™ i7-8650U CPU @ 1.90GHz × 8 with 16 GB RAM. It follows a short description of the content and steps.
 
-## Folders:
+## Content
 `PedigreeSimInput` folder with the necessary parameters for PedigreeSim software. The files starting with 0 are common for all the ploidies:
 - `0.chrom`: general genomic information (number of chromosomes, length, centromere position)
 - `0.map`: genetic map with marker names and position
@@ -29,6 +29,7 @@ It uses mainly R and bash scripts. `0_runAll.sh` is a wrap-up bash script to run
 
 `PedigreeSim` folder with the PedigreeSim software V2.0
 `PolyRelatedness_1.8` folder with the PolyRelatedness software V1.8
+`StatResults_Example.csv` output example with the summary statistics computed for each methodology for each population and replicate.
 
 ## Scripts:
 `.sh` are bash scripts and `.R` are R scripts
