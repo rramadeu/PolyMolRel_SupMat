@@ -13,9 +13,9 @@ start=`date +%s`
 bash 1_SimulateGenotypes.sh
 Rscript 2_funderalleles2biallelic.R
 Rscript 3_funderalleles2multiallelic.R
-bash 4_PolyRelatednes.sh
-Rscript 5_AGHmatrix.R
-Rscript 6_ObservedRelatedness.R
+Rscript 4_ObservedRelatedness.R
+bash 5_PolyRelatednes.sh
+Rscript 6_AGHmatrix.R
 Rscript 7_ProcessingResults.R
 
 end=`date +%s`
