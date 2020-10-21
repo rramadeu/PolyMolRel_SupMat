@@ -2,10 +2,10 @@
 
 Supplementary Material (scripts) to reproduce all the analysis of the manuscript:
 
-**"Estimation of Molecular Pairwise Relatedness in Autopolyploid Crops"**
-by Rodrigo R Amadeu, Leticia de Castro Lara, Patricio R Munoz, Antonio Augusto Franco Garcia
-G3: Genes, Genomes, Genetics, Early online October 13, 2020
-https://doi.org/10.1534/g3.120.401669
+**"Estimation of Molecular Pairwise Relatedness in Autopolyploid Crops"**  
+by Rodrigo R Amadeu, Leticia de Castro Lara, Patricio R Munoz, Antonio Augusto Franco Garcia  
+G3: Genes, Genomes, Genetics, Early online October 13, 2020  
+https://doi.org/10.1534/g3.120.401669  
 
 ## Before running:
 All the scripts were evaluated under Linux Ubuntu 20.04 64 bits. Before run it, verify if `PedigreeSim` and `PolyRelatedness` software are fully working. For `PedigreeSim` you need to have Java Runtime Environment installed. `PedigreeSim` details at https://www.wur.nl/en/show/Software-PedigreeSim.htm. `PolyRelatedness` details at https://github.com/huangkang1987/polyrelatedness. In addition, you need to have `R` and `AGHmatrix` package installed. Details in https://cran.r-project.org/ and https://cran.r-project.org/package=AGHmatrix respectivally. 
